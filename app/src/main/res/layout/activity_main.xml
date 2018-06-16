@@ -36,13 +36,13 @@
             android:layout_marginEnd="@dimen/margin"
             android:layout_marginLeft="@dimen/margin"
             android:layout_marginRight="@dimen/margin"
-            android:hint="@string/your_query_here"
             android:layout_marginStart="@dimen/margin"
             android:layout_marginTop="@dimen/margin"
+            android:hint="@string/your_query_here"
+            android:inputType="text"
             app:layout_constraintEnd_toStartOf="@+id/search_btn"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:inputType="text" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/search_btn"
@@ -52,13 +52,13 @@
             android:layout_marginRight="@dimen/margin"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
+            android:contentDescription="@string/search_button_cd"
             android:focusable="true"
             android:padding="@dimen/search_btn_padding"
             android:src="@drawable/search_icon"
             app:layout_constraintBottom_toBottomOf="@+id/search_field"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/search_field"
-            android:contentDescription="@string/search_button_cd" />
+            app:layout_constraintTop_toTopOf="@+id/search_field" />
 
         <ListView
             android:id="@+id/books_list"
